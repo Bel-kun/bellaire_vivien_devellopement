@@ -2,6 +2,7 @@ const container = document.querySelector('.container')
 const startButton = container.querySelector('.start-button')
 const scene = container.querySelector('.scene')
 
+startButton.innerHTML = 'START'
 const start = () =>
 {
     startButton.style.display = 'none'
@@ -36,7 +37,11 @@ const start = () =>
                         const timeElapsed = timeEnd - timeStart
                         const timeElapsedFormated = timeElapsed / 1000 + 's'
                         console.log(timeElapsed)
-                        startButton.innerHTML = 'RESTART<br>' + timeElapsedFormated
+                        startButton.style.paddingBottom = '90px'
+                        startButton.style.bottom= '7%'
+                        startButton.style.left= 'calc(50% - 180px)'
+                        startButton.style.fontSize= '36px'
+                        startButton.innerHTML = `RESTART<br>${timeElapsedFormated}`
                         
                     } 
                 }
