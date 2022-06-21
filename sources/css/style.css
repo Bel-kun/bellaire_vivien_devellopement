@@ -1,0 +1,19 @@
+body
+{
+    background-color: rgb(8, 18, 18);  
+    font-family: 'press2start';
+}
+
+#particles-js
+{
+    
+}
+
+.container
+{
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    display: inline-block;
+    position: absolute;
+}
